@@ -1,0 +1,20 @@
+.container{
+    background-image: url(/images/pizza/pizza14.jpg);
+    height: 70vh
+}
+
+.pizza-text{
+    text-align: left;
+    font-size: 100px;
+    color: rgba(243, 6, 6, 0.911);
+    font-style: italic;
+    font-weight: bolder;
+    font-variant: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1; 
+    padding-left: 20px;
+    
+}
+.navbar navbar-expand-lg navbar-light bg-light{
+    background-color: rgb(4, 160, 95);
+}
