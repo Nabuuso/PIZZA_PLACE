@@ -1,5 +1,5 @@
 .container{
-    background-image: url(/images/pizza/pizza17.jpg); background-repeat: no-repeat;
+    background-image: url(/images/pizza/pizza17.jpg); background-repeat: no-repeat; 
     height: 80vh
 }
 
@@ -20,3 +20,20 @@
 .navbar {
     background-color: rgb(253, 225, 183) !important;
    }
+
+.container2{
+    margin-left: 70px; margin-top: 40px;
+}
+
+#aboutus{
+    
+}
+
+#about-us{
+    margin-right: 70px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+
