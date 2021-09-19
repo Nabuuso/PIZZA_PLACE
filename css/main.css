@@ -99,22 +99,14 @@
     background-color: #d9edf7;
     box-shadow: 3px 5px 10px #318f86;
 }
-.hotel_reserve_box {
-    margin-top: 30px;
-    margin-left: 350px;
-    margin-right: 350px;
-    margin-bottom: 60px;
-    padding: 40px 50px;
-    background-color: #c6badc;
-    box-shadow: 3px 5px 10px #7527b0;
-}
+
 .online_food_delivery_box {
     margin-top: 50px;
-    margin-left: 350px;
-    margin-right: 350px;
-    margin-bottom: 60px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 50px;
     padding: 20px 40px;
-    background-color: #d4c0b9;
+    background-color: #f1bf96;
     box-shadow: 3px 5px 10px #714c4a;
 }
 .result_box {
@@ -124,7 +116,7 @@
     margin-bottom: 60px;
     padding: 20px 40px;
     background-color: #d4c0b9;
-    box-shadow: 3px 5px 10px #8BC34A;
+    box-shadow: 3px 5px 10px #f0c69e;
 }
 .result_box_text {
     color: #232222;
@@ -133,7 +125,7 @@
     padding-top:10px;
 }
 .result_box_text span {
-    color: #614136;
+    color: #aefdd8;
     font-size: 26px;
     text-align: center;
 }

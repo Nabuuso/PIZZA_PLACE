@@ -6,7 +6,7 @@ function finalCost(){
     var deliveryType = document.getElementById("delivery-mode").value;
     var deliveryArea = document.getElementById("place-of-delivery").value;
 
-    var all_food = (parseInt(pizza-topping)*7) + (parseInt(crust)*3) + ((pizza-quantity)*2) + (parseInt(delivery-mode)*4) 
+    var all_pizza_types = (parseInt(pizza-topping)*7) + (parseInt(crust)*3) + ((pizza-quantity)*2) + (parseInt(delivery-mode)*4) 
     + (parseInt(place-of-delivery)*3)
     document.getElementById("result").innerHTML = all_food;
 }
