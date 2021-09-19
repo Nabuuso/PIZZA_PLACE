@@ -12,6 +12,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
     </head>
     <nav class="navbar navbar-expand-lg " id="navbar">
         <a class="navbar-brand" href="#">Lizza'sPizza</a>
@@ -63,15 +64,15 @@
             <div class="row">
                 <div class="col-md-6 mt-4">
                     <div>
-                        <img class="card-img-top one" src="/images/pizza/pizza1.jpg">
+                        <img class="card-img-top one" style="width: 550px; height: 350px; margin-left: 70px;" src="/images/pizza/pizza1.jpg">
                     </div>
                     <div class="overlay1">
-                        <h5 class="text-bold" style="font-family: 'Times New Roman', Times, serif;">Pepperoni</h5>
+                        <h5 class="text-bold" style="font-family: 'Times New Roman', Times, serif; margin-left: 70px;">Pepperoni</h5>
                 </div>
             </div>
                 <div class="col-md-6 mt-4">
                     <div>
-                        <img class="card-img-top" src="/images/pizza/pizza10.jpg">
+                        <img class="card-img-top" style="width: 550px; height: 350px;" src="/images/pizza/pizza10.jpg">
                     </div>
                     <div class="overlay">
                         <h5 class="text-bold" style="font-family: 'Times New Roman', Times, serif;">Plenty Cheese</h5>
@@ -82,15 +83,15 @@
             <div class="row">
                 <div class="col-md-6 mt-4">
                     <div>
-                        <img class="card-img-top" src="/images/pizza/pizza11.jpeg">
+                        <img class="card-img-top" style="width: 550px; height: 350px; margin-left: 70px;" src="/images/pizza/pizza11.jpeg">
                     </div>
                     <div class="overlay">
-                        <h5 class="text-bold" style="font-family: 'Times New Roman', Times, serif;">Fruity-Veggy</h5>
+                        <h5 class="text-bold" style="font-family: 'Times New Roman', Times, serif; margin-left: 70px;">Fruity-Veggy</h5>
                     </div>
                 </div>
                 <div class="col-md-6 mt-4">
                     <div>
-                        <img class="card-img-top" src="/images/pizza/salami-pizza-6593465_1920.jpg">
+                        <img class="card-img-top" style="width: 550px; height: 350px;" src="/images/pizza/salami-pizza-6593465_1920.jpg">
                     </div>
                     <div class="overlay">
                         <h5 class="text-bold" style="font-family: 'Times New Roman', Times, serif;">Salami-Pizza</h5>
@@ -98,6 +99,67 @@
                 </div>
             </div>
         </div>
+
+        <div class="online_food_delivery_box animated bounceInDown" id="input_box">
+            <h3> You order, We deliver </h3><br>
+            <form>
+                <div class="form-group">
+                    <select class="form-control" id="pizza-topping" onchange="finalCost()">
+                        <option value="0"> Select Pizza Topping </option>
+                        <option value="1"> Pepperoni</option>
+                        <option value="2"> Salami-Pizza </option>
+                        <option value="3"> Fruity-Veggy </option>
+                        <option value="4"> PLenty Cheese </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="crust" onchange="finalCost()">
+                        <option value="0"> Choose Crust</option>
+                        <option value="2"> Crispy </option>
+                        <option value="0"> Gluten-free </option>
+                        <option value="2"> Stuffed </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="pizza-quantity" placeholder="Quantity" onkeyup="finalCost()" >
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="delivery-mode" onchange="finalCost()">
+                        <option value="0"> Size </option>
+                        <option value="0"> Small </option>
+                        <option value="2"> Big </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="place-of-delivery" onchange="finalCost()">
+                        <option value="0"> Select Delivery Area ... </option>
+                        <option value="1"> Nairobi CBD </option>
+                        <option value="2"> Limuru </option>
+                        <option value="3"> Thika </option>
+                        <option value="4"> Embakasi </option>
+                        <option value="5"> Karen  </option>
+                        <option value="6"> Ngong </option>
+                        <option value="7"> Kayole </option>
+                    </select>
+                </div><br>
+                <div class="form-group">
+                    <label>Total Cost ($) : </label>
+                    <span id="result" style="background-color: #f19475;color: rgb(245, 230, 230);padding: 6px 70px;font-weight: 600;font-size: 18px; margin-left: 10px;border-radius: 5px;">0</span>
+                    <input type="button" value="SUBMIT" class="btn btn-primary" style="float: right" id="ok" onclick="ok_result()">
+                </div>
+            </form>
+        </div>
+  
+        <div class="result_box animated zoomIn" style="display: none;" id="okResult">
+            <h3 class="result_box_text" id="ok_text"> Your order is successfully submitted. 
+                Please keep patience, we will come to you soon.<br><br><span> --  Thank You  -- </span></h3><br>
+        </div>
+
+        <div class="container3">
+            <h1>Contact Us</h1>
+        </div>
+
+
         <script src="" async defer></script>
     </body>
 </html>
