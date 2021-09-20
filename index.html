@@ -84,12 +84,12 @@
             </div>
         </div>
             <!-- orders -->
-        <div class="jumbotron" id="order">
-            <h1 class="order" style="text-align: center; color: darkgreen; 
-            font-family: 'Times New Roman', Times, serif;">Place your order here</h1>
-            <form class="text-center" id="text-center">
-              <label class="" style="font-weight: bolder; font-size: 25px;">Pizza Flavor</label><br>
-              <select class="flavors" id="flavor" required><br>
+            <div class="jumbotron" id="order">            
+                <h1 class="order" style="text-align: center; color: darkgreen; font-family: 'Times New Roman', Times, serif;">Place your order here</h1>
+                <form class="text-center" id="text-center"></form>
+                <label class="" style="font-weight: bolder; font-size: 25px;">Pizza Flavor</label><br>
+                
+                <select class="flavors" style="text-align: center;" id="flavor" required><br>
                 <option label="Veggie Pizza" value="600">Veggie Pizza</option>
                 <option label="Pepperoni Pizza." value="500">Pepperoni Pizza.</option>
                 <option label="Cheese Pizza" value="650">Cheese Pizza</option>
@@ -109,10 +109,13 @@
               </select><br>
               <br><label style="font-weight: bolder; font-size: 25px;">Quantity</label><br>
               <input value="Number of pizza" required placeholder="Number of pizza" id="Number_of_pizza"></input><br>
-              <div class="button">
-                <div class="button">
-                    <br><br><button type="submit" id="btn" label="">submit</button>
-                
+              <button type="button" onclick="my_button_click_handler">submit</button>
+              <!-- <button onclick="myFunction()"> SUBMIT </button> -->
+
+                <!-- <input type='submit' name="submit" value="Post Form" />
+
+                <br><br><button type="submit" id="submit" 
+                label="onclick"><input type="submit"></button>submit</button> -->
               </div>
             </form>
           </div>
