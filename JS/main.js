@@ -8,6 +8,7 @@ const prices = {
 $('form-pizza').submit(function(event){
   event.preventDefault();
   const fd = new FormData(this);
+    console.log(fd.get('flavor'),)
   const order = {
     size: fd.get('size'),
     flavor: fd.get('flavor'),
