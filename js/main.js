@@ -16,12 +16,12 @@ $(document).ready(function() {
           }
 
           function number() {
-            var pizzaNumber = document.getElementById("quantity").value;
-            return parseInt(pizzaNumber);
+            var pizzaQuantity = document.getElementById("quantity").value;
+            return parseInt(pizzaQuantity);
           }
       
           //a constructor to create objects/instances of a user's orders
-          function Order(flavor, size, crust, topping, quantity) {
+          function Order(flavor, size, crust, quantity);{
             this.newFlavor = flavor;
             this.newSize = size;
             this.newCrust = crust;
@@ -35,7 +35,7 @@ $(document).ready(function() {
           var totalCost =
             (userInput.newSize +
               userInput.newCrust +
-              userInput.newFlavor) *
+              userInput.newFlavor)*
             userInput.newQuantity;
       
           //prompts for the user
