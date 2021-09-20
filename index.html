@@ -86,18 +86,21 @@
             <form>
               <div class="form-group">
                 <label for="sel1">Select list (your choice):</label>
-                <select class="order-form" style="width: 400px;" id="selection">
+                <select class="order-form" style="width: 400px;" id="size">
                   <option>Pizza Size</option>
                   <option>Small</option>
                   <option>Medium</option>
                   <option>Large</option>
                 </select>
                 <br>
+                <div>
+                    <button type="submit" class="btn btn-primary" style="margin-left: 180px;">Add to Cart</button>
+                  </div>
               </div>
             </form>
           </div>
           <div>
-            <select class="order-form" style="width: 400px; margin-left: 180px;" id="selection">
+            <select class="order-form" style="width: 400px; margin-left: 180px;" id="flavor">
                 <option>Pizza flavor</option>
                 <option>Cheese</option>
                 <option>Beef</option>
@@ -105,13 +108,38 @@
               </select>
           </div>
           <div>
-            <select class="order-form" style="width: 400px; margin-left: 180px;" id="selection">
+            <button type="submit" class="btn btn-primary" style="margin-left: 180px;">Add to Cart</button>
+          </div>
+          <div>
+            <select class="order-form" style="width: 400px; margin-left: 180px;" id="crust">
                 <option>Pizza crust</option>
                 <option>Crispy</option>
                 <option>fruity</option>
                 <option>stuffed</option>
               </select>
           </div>
+          <div>
+            <button type="submit" class="btn btn-primary" style="margin-left: 180px;">Add to Cart</button>
+          </div>
+          <table>
+            <table class="table table-sm" style="text-align: center; margin-left: 10px; margin-right: 10px;">
+                <thead>
+                  <tr>
+                    <th scope="col">quantity</th>
+                    <th scope="col">size</th>
+                    <th scope="col">crust</th>
+                    <th scope="col">flavor</th>
+                  </tr>
+                </thead>
+                <tbody>
+            </table>
+          </table>
+          <p></p>
+          <p></p>
+          <tfoot>
+              <td style="padding-left: 10px;">Total cost</td>
+          </tfoot>
+
             
         <script src="js/main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
