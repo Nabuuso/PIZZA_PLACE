@@ -1,6 +1,3 @@
-body{
-    background-color: tomato;
-}
 .container{
     background-image: url(/images/pizza/pizza17.jpg); background-repeat: no-repeat; 
     height: 100vh
@@ -56,17 +53,7 @@ body{
     margin-bottom: 50px;
     padding: 40px 60px;
 }
-/* #details_info {
-    background-color: #f7f7f7;
-    color: #463c39;
-    font-size: 17px;
-    padding: 30px 30px;
-    width: 40%;
-    border: 1px solid #cccccc;
-    font-family: sans-serif;
-    line-height: 1.8;
-    margin-left: 90px;
-} */
+
 .box3 {
     margin-top: 80px;
     margin-left: 150px;
