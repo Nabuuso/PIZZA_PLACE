@@ -1,6 +1,9 @@
+body{
+    background-color: tomato;
+}
 .container{
     background-image: url(/images/pizza/pizza17.jpg); background-repeat: no-repeat; 
-    height: 80vh
+    height: 100vh
 }
 
 #pizza-text{
@@ -22,7 +25,7 @@
    }
 
 .container2{
-    margin-left: 70px; margin-top: 40px;
+    margin-left: 70px; margin-top: 20px;
 }
 
 #aboutus{
@@ -46,23 +49,14 @@
     font-family: sans-serif;
     line-height: 1.8;
 }
-#newPublish {
-    background-color: #c5edf3;
-    color: #463c39;
-    font-size: 17px;
-    padding: 30px 30px;
-    width: 40%;
-    border: 2px solid #009688;
-    font-family: sans-serif;
-    line-height: 1.8;
-}
+
 .box {
     background-color: #f7f7f7;
     margin-top: 60px;
     margin-bottom: 50px;
     padding: 40px 60px;
 }
-#details_info {
+/* #details_info {
     background-color: #f7f7f7;
     color: #463c39;
     font-size: 17px;
@@ -72,7 +66,7 @@
     font-family: sans-serif;
     line-height: 1.8;
     margin-left: 90px;
-}
+} */
 .box3 {
     margin-top: 80px;
     margin-left: 150px;
