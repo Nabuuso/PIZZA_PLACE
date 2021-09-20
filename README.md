@@ -12,7 +12,6 @@ Bootstrap
 Javascript
 
 ## wagabaliz@gmail.com
-### License
-MIT
+### License MIT
 Copyright (c) 2021 **Sr Betty Nabuuso(fsp)**
   
