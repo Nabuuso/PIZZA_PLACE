@@ -4,7 +4,7 @@
 ## Description
 Description of the newest pizza place (site) in town where customers can order different sizes of pizzas with one or more toppings.
 ## Setup/Installation Requirements
-* No Installations required
+* You need to key in your email address
 ## Technologies Used 
 HTML 
 CSS 
