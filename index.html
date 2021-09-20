@@ -13,6 +13,24 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+        <script>
+            function finalCost(){
+                var pizzaTopping = document.getElementById("pizza-topping").value;
+                var crustType = document.getElementById("crust-type").value;
+                var pizzaQuatity = document.getElementById("pizza-quantity").value;
+                var deliveryMode = document.getElementById("delivery-mode").value;
+                var placeOfDelivery = document.getElementById("place-of-delivery").value;
+
+                var all_pizza_types = (parseInt(pizza-topping)*7) + (parseInt(crust)*3) + ((pizza-quantity)*2) + (parseInt(delivery-mode)*4) 
+                + (parseInt(place-of-delivery)*3)
+                document.getElementById("result").innerHTML = all_food;
+            }
+            function ok_result(){
+                document.getElementById("okResult").style.display="block";
+                document.getElementById("okResult").style.backgroundColor="#DCE775";
+                document.getElementById("input_box").style.display="none";
+            }
+        </script>
     </head>
     <nav class="navbar navbar-expand-lg " id="navbar">
         <a class="navbar-brand" href="#">Lizza'sPizza</a>
@@ -42,8 +60,7 @@
             </div>   
         </div>
         <div class="container2"> 
-            <div id="aboutus"></div>
-            <h3>ABOUT US</h3>
+            <h3 class="aboutus">ABOUT US</h3>
             <div class="row">
                 <div class="col-6"></div>
                 <div id="pimg1" class="">
@@ -114,7 +131,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <select class="form-control" id="crust" onchange="finalCost()">
+                    <select class="form-control" id="crust-type" onchange="finalCost()">
                         <option value="0"> Choose Crust</option>
                         <option value="2"> Crispy </option>
                         <option value="0"> Gluten-free </option>
