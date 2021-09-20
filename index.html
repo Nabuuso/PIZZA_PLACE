@@ -9,8 +9,6 @@
         <link rel="stylesheet" href="css/main.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
         rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="js/main.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
         <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
@@ -83,42 +81,39 @@
                 </div>
             </div>
         </div>
-            <!-- orders -->
-        <div class="jumbotron" id="order">
-            <form class="text-center" id="text-center"></form>
-            <h1 class="order" style="text-align: center; color: darkgreen; 
-            font-family: 'Times New Roman', Times, serif;">Place your order here</h1>
-                <label class="" style="font-weight: bolder; font-size: 25px;">Pizza Flavor</label><br>
-              <select class="flavors" id="flavor" required><br>
-                <option label="Veggie Pizza" value="600">Veggie Pizza</option>
-                <option label="Pepperoni Pizza." value="500">Pepperoni Pizza.</option>
-                <option label="Cheese Pizza" value="650">Cheese Pizza</option>
-                <option label="Meat Pizza" value="800">Meat Pizza</option>
-              </select><br>
-              <br><label style="font-weight: bolder; font-size: 25px;">Pizza Size</label><br>
-              <select class="sizes" id="size" required><br>
-                <option label="small" value="250">Small</option>
-                <option label="Medium" value="350">Medium</option>
-                <option label="Large" value="1000">Large</option>
-              </select><br>
-              <br><label style="font-weight: bolder; font-size: 25px;">Pizza Crust</label><br>
-              <select class="crusts" id="crust" required><br>
-                <option label="Crispy" value="300">Crispy</option>
-                <option label="Glutten_free" value="800">Glutten free</option>
-                <option label="Stuffed" value="900">Stuffed</option>
-              </select><br>
-              <br><label style="font-weight: bolder; font-size: 25px;">Quantity</label><br>
-              <input value="Number of pizza" required placeholder="Number of pizza" id="Number_of_pizza"></input><br>
-              <div class="button">
-                <button onclick="myFunction()">Submit</button>
-                <p id="submit"></p>
-
-                <!-- <input type='submit' name="submit" value="Post Form" />
-
-                <br><br><button type="submit" id="submit" 
-                label="onclick"><input type="submit"></button>submit</button> -->
+        <div class="container0">
+            <h2 class="order" style="text-align: center;">Your Order Here</h2>
+            <form>
+              <div class="form-group">
+                <label for="sel1">Select list (your choice):</label>
+                <select class="order-form" style="width: 400px;" id="selection">
+                  <option>Pizza Size</option>
+                  <option>Small</option>
+                  <option>Medium</option>
+                  <option>Large</option>
+                </select>
+                <br>
               </div>
             </form>
           </div>
+          <div>
+            <select class="order-form" style="width: 400px; margin-left: 180px;" id="selection">
+                <option>Pizza flavor</option>
+                <option>Cheese</option>
+                <option>Beef</option>
+                <option>Veggies</option>
+              </select>
+          </div>
+          <div>
+            <select class="order-form" style="width: 400px; margin-left: 180px;" id="selection">
+                <option>Pizza crust</option>
+                <option>Crispy</option>
+                <option>fruity</option>
+                <option>stuffed</option>
+              </select>
+          </div>
+            
+        <script src="js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     </body>
 </html>
