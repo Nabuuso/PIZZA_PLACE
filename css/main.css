@@ -1,5 +1,5 @@
 .container{
-    background-image: url(./Images/pizza17.jpg); background-repeat: no-repeat; 
+    background-image: url("/Images/pizza17.jpg"); background-repeat: no-repeat; 
     height: 100vh
 }
 
